@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Api\BotController;
+use App\Http\Controllers\Api\SendPickController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('/send-pick', [BotController::class, 'sendPick'])->middleware('api.key');
+Route::post('/send-pick', [SendPickController::class])->middleware('api.key');

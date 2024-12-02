@@ -14,6 +14,6 @@ class ApiKeySeeder extends Seeder
      */
     public function run()
     {
-        ApiKey::updateOrCreate(['key' => 'f8a2c3e76b4d56292c74eef1d91a0e7b']);
+        ApiKey::updateOrCreate(['key' => env('API_KEY')]);
     }
 }
